@@ -72,19 +72,7 @@ A modern, responsive portfolio website showcasing the work and skills of Erin Yo
    bun install
    ```
 
-3. **Set up environment variables**
-
-   ```bash
-   cp .env.example .env.local
-   ```
-
-   Update `.env.local` with your values:
-
-   ```
-   VITE_VERCEL_IMAGE_PATH=your_image_path_here
-   ```
-
-4. **Start the development server**
+3. **Start the development server**
 
    ```bash
    npm run dev
@@ -96,7 +84,7 @@ A modern, responsive portfolio website showcasing the work and skills of Erin Yo
    bun dev
    ```
 
-5. **Open your browser**
+4. **Open your browser**
    Navigate to [http://localhost:5173](http://localhost:5173)
 
 ## 📝 Available Scripts
