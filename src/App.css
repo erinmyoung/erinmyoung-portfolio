@@ -1,0 +1,33 @@
+#root {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.dark {
+  .slick-dots.slick-indicators li button:before,
+  .slick-dots.slick-indicators li.slick-active button:before {
+    color: #ffb3cc;
+  }  
+}
+
+.project-accordion,
+.project-accordion > * {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.experience-list li::marker {
+  width: 56px;
+  height: 48px;
+}
+
+.slick-dots.slick-indicators li button:before,
+.slick-dots.slick-indicators li.slick-active button:before {
+  font-size: 1rem;
+  color: #446f64;
+}

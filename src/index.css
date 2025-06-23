@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --text-color: #213547;
+  --background-color: #ffffff;
+  --pink: #ffb3cc;
+  --green: #446f64;
+
+  font-family: 'Tajawal', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #0E0025;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --spacing-title: 60px;
+  --spacing-mobile: 36px;
+  --spacing-default: 16px;
+  --text-header: 68px;
+  --text-header-mobile: 50px;
+  --text-header-small: 40px;
+  --text-title: 50px;
+  --text-title-mobile: 40px;
+  --text-title-small: 32px;
+  --text-strapline: 32px;
+  --text-strapline-mobile: 24px;
+  --text-project-title: 26px;
+  --container-image: 320px;
+  --container-icon-small: 28px;
+  --container-icon-medium: 40px;
+  --container-icon-large: 100px;
+  --font-bungee: 'BungeeShade', sans-serif;
+  --color-dark: var(--green);
+  --color-primary: #B1CFC7;
+  --color-secondary: #F4FDFB;
+  --color-darkmode-light: var(--pink);
+  --color-darkmode-background: #0E0025;
+  --color-darkmode-primary: #8E4376;
+  --color-darkmode-secondary: #450019;
+  --shadow-crisp-light: -0.3rem 0.3rem var(--green);
+  --shadow-crisp-dark: -0.3rem 0.3rem white;
+  --shadow-soft-highlight: 0 0 5px 5px rgb(255 255 255 / 0.2);
+}
+
+@font-face {
+  font-family: 'BungeeShade';
+  font-weight: 400;
+  font-display: block;
+  src: local('BungeeShade'), url(./fonts/BungeeShade-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 400;
+  font-display: block;
+  src: local('Tajawal'), url(./fonts/Tajawal-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 700;
+  font-display: block;
+  src: local('Tajawal'), url(./fonts/Tajawal-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 900;
+  font-display: block;
+  src: local('Tajawal'), url(./fonts/Tajawal-Black.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  line-height: 1.2;
+}
+
+h1, h2, h3, p {
+  word-break: break-word;
+}
