@@ -39,9 +39,9 @@ export const data = [
     images: [],
   },
   {
-    title: "Digital foundry site rebuild",
+    title: "Digital Foundry site rebuild",
     description:
-      "Rebuilt YouTube channel site Digital Foundry in Django. Teamed up with a backend engineer to managed the patreon integration, Erin led team meetings with editorial staff, gathered requirements, project management, conducted design reviews, and created wireframes for page layouts. She organised the project tasks and integrated patreon subscriptions with the frontend to display downloaded content to specific user types in the Django views.",
+      "Rebuilt YouTube channel site Digital Foundry in Django. Teamed up with a backend engineer who managed the Patreon integration. Erin led team meetings with editorial staff, gathered requirements, triaged pre and post launch tasks, conducted design reviews, and created wireframes for page layouts in Adobe XD. She integrated Patreon subscriptions with the frontend to display downloaded content to specific user types in the Django views.",
     link: "https://www.digitalfoundry.net",
     images: [
       {
@@ -81,7 +81,7 @@ export const data = [
   {
     title: "VG247 site rebuild",
     description:
-      "Frontend build for editorial site VG247 which was migrated from WordPress to Django. Teamed up with a backend engineer who managed the data import, Erin managed project tasks in GitHub, created XD wireframes, and ran communications with stakeholders from editorial, design, backend, SEO, and growth product managers. Rebuilt queries with Elasticsearch DSL filters, implemented caching with Django util cache decorators, created Python views inheriting from the core app, and worked closely with the design team to implement the new branding.",
+      "Frontend build for editorial site VG247 which was migrated from WordPress to Django. Teamed up with a backend engineer who managed the data import. Erin managed project tasks in GitHub, created XD wireframes, and ran communications with senior leadership stakeholders from editorial, design, backend, SEO, and product growth. Rebuilt queries with Elasticsearch DSL filters, implemented view-level caching, and worked closely with the design team to implement the new branding.",
     link: "https://www.vg247.com",
     images: [
       {
@@ -111,8 +111,8 @@ export const data = [
     ],
   },
   {
-    title: "In-house polls",
-    description: `<p>Designed and built in-house poll system, iterating and improving for over two years as a replacement for a third party platform with poor performance, CLS issues, and low accessibility. Erin developed a voting API which returned additional polls for continuous voting, AJAX for rendering voting percentages in real time, and localStorage to store previous votes.</p><br/><p>Built within JavaScript class and Django class-based views. Polls achieved average of 750k clicks per month and supported paid sponsorships, google data visualization charts, CSV downloading in the CMS for tracking engagement, tagging for relevant polls in articles, and increased ads revenue</p>`,
+    title: "In-house content polls",
+    description: `<p>Designed and built in-house content poll system, iterating and improving for over two years as a replacement for a third party platform with poor performance, CLS issues, and low accessibility. Erin developed a voting API which returned additional polls for continuous voting, AJAX for rendering voting percentages in real-time, and localStorage to store previous votes.</p><br/><p>Built within JavaScript class and Django class-based views. Polls achieved average of 750k clicks per month, saving the business over $6k in annual costs and bringing in ~15% more ads revenue. The iterated improvements included paid sponsorships, google data visualization charts, CSV downloading in the CMS for tracking engagement, tagging for relevant polls in articles, and timed voting.</p>`,
     link: "",
     images: [
       {
@@ -151,7 +151,7 @@ export const data = [
   },
   {
     title: "Eurogamer 25th Anniversary theme switcher",
-    description: `<p>Created an interactive theme switcher for Eurogamer's 25th anniversary, allowing users to toggle between site designs from 1999, 2000, 2003, 2005, and 2011. The content of the page could not be changed, so all styling was applied with less CSS by preloading the new theme stylesheets and then swapping on click of the theme button. The feature received positive reader feedback and generated 16k interactions in the week it was active.</p><br/><p><strong>"Impressed there are no html changes. This is some expert level CSS hacking!"</strong> - Luke Reed #7629<br/><strong>"This theme switcher is amazing, congratulation on an amazing piece of CSS."</strong> - StooMonster #5704</p>`,
+    description: `<p>Created an interactive theme switcher for Eurogamer's 25th anniversary, allowing users to toggle between site designs from 1999, 2000, 2003, 2005, and 2011. The content of the page could not be changed, so all styling was applied with Less CSS by preloading the new theme stylesheets and then swapping on click of the theme button. The feature received positive reader feedback and generated 16k interactions in the week it was active.</p><br/><p><strong>"Impressed there are no html changes. This is some expert level CSS hacking!"</strong> - Luke Reed #7629<br/><strong>"This theme switcher is amazing, congratulation on an amazing piece of CSS."</strong> - StooMonster #5704</p>`,
     link: "https://www.eurogamer.net/eg25-theme-switcher",
     images: [
       {
