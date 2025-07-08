@@ -1,5 +1,5 @@
 export const data = {
-  bio: "Erin is a New York based Frontend-leaning Full Stack Engineer with over 6 years of experience in vanilla JavaScript, Python, and React. With a creative background in art and design, she merges these skills with programming to build product-focused, data-rich web applications. Erin has a strong track record of translating complex datasets into intuitive UIs and collaborating cross-functionally with business stakeholders.",
+  bio: "Creative and product-focused Full Stack Engineer (Frontend-leaning) with 6+ years of experience building performant, accessible, and responsive web applications. Specializes in vanilla JavaScript, React, CSS preprocessors, and Python. Strong track record of collaborating with cross-functional teams to deliver intuitive end-to-end solutions and experienced working in both frontend and backend technologies with a strong design sense.",
   location: "New York, NY",
   email: "erinmyoung12@gmail.com",
   phone: "(971) 221-7468",

@@ -64,6 +64,7 @@ export function Lightbox({
     <div
       className="slider-container bg-black/75 fixed block top-0 left-0 right-0 bottom-0 w-screen h-screen z-10 p-4 hover:cursor-zoom-out"
       onClick={(e) => handleLightboxClick(e)}
+      aria-modal="true"
     >
       <Slider {...settings}>
         {images.map((image, index) => (
@@ -78,6 +79,7 @@ export function Lightbox({
       <button
         onClick={handleExitClick}
         className="cursor-pointer absolute right-4 top-4 hover:shadow-crisp-dark duration-400 ease-in-out"
+        aria-label="Exit lightbox"
       >
         <img
           loading="lazy"

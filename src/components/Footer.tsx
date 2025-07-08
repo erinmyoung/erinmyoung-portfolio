@@ -34,7 +34,11 @@ export function Footer() {
               src={darkMode ? DARK_EMAIL_SRC : EMAIL_SRC}
               alt="Email icon"
             />
-            <a href="mailto:erinmyoung12@gmail.com" target="_blank">
+            <a
+              href="mailto:erinmyoung12@gmail.com"
+              target="_blank"
+              aria-label="Email address"
+            >
               erinmyoung12@gmail.com
             </a>
           </span>
@@ -43,14 +47,20 @@ export function Footer() {
               src={darkMode ? DARK_PHONE_SRC : PHONE_SRC}
               alt="Phone icon"
             />
-            <a href="tel:+19712217468">(971) 221-7468</a>
+            <a href="tel:+19712217468" aria-label="Mobile phone number">
+              (971) 221-7468
+            </a>
           </span>
           <span className="flex items-center gap-4">
             <Icon
               src={darkMode ? DARK_GITHUB_SRC : GITHUB_SRC}
               alt="GitHub icon"
             />
-            <a href="https://github.com/erinmyoung" target="_blank">
+            <a
+              href="https://github.com/erinmyoung"
+              target="_blank"
+              aria-label="Github profile"
+            >
               github.com/erinmyoung
             </a>
           </span>
@@ -62,6 +72,7 @@ export function Footer() {
             <a
               href="https://www.linkedin.com/in/erin-young-0a3b1363"
               target="_blank"
+              aria-label="Linkedin profile"
             >
               linkedin.com/in/erin-young-0a3b1363
             </a>
@@ -70,11 +81,11 @@ export function Footer() {
         <div className="flex items-center justify-center w-full">
           <DownloadResume />
         </div>
-        <p className="mt-8 mb-4 text-center font-medium">
+        <p className="mt-8 mb-4 text-center font-medium text-black dark:text-white">
           Website built with Vite/React, TypeScript, TailwindCSS, Figma, Framer
           Motion, Material UI, React slick, and Vercel.
         </p>
-        <p className="mx-auto size-fit font-medium">
+        <p className="mx-auto size-fit font-medium text-black dark:text-white">
           © {new Date().getFullYear()} copyright. All rights reserved.
         </p>
       </section>

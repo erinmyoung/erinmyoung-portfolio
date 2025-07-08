@@ -1,9 +1,5 @@
 import { VERCEL_PATH } from "./vercel";
 
-export const EXTERNAL_LINK_SRC = `${VERCEL_PATH}external-link-F8GUkzLuvNPG1AFbqTXIgkVzSYEFKQ.webp`;
-
-export const DARK_EXTERNAL_LINK_SRC = `${VERCEL_PATH}darkmode-external-link-SXIoWD3rXlOWx8qLhJz8EZAWY0Ml3j.webp`;
-
 export const ARROW_DOWN_SRC = `${VERCEL_PATH}arrow-SSG3cGxySWgdK9noYqmB8TPTwAUnYZ.webp`;
 
 export const DARK_ARROW_DOWN_SRC = `${VERCEL_PATH}darkmode-arrow-v5slWyphlstDbR84ybJ3q2cgMPM5rV.webp`;
