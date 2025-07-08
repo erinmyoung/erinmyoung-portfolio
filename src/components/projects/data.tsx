@@ -32,6 +32,13 @@ import {
 
 export const data = [
   {
+    title: "E-commerce art store (in progress)",
+    description:
+      "Building an e-commerce store for original Erin Young artwork. Designed with Figma and using NextJS, React, TypeScript, Sanity headless CMS, Graph-Relational Object Queries (GROQ), Stripe integration for purchases, Zustand for state management, Tailwind CSS, and Vercel for deployments.",
+    link: "",
+    images: [],
+  },
+  {
     title: "Digital foundry site rebuild",
     description:
       "Rebuilt YouTube channel site Digital Foundry in Django. Teamed up with a backend engineer to managed the patreon integration, Erin led team meetings with editorial staff, gathered requirements, project management, conducted design reviews, and created wireframes for page layouts. She organised the project tasks and integrated patreon subscriptions with the frontend to display downloaded content to specific user types in the Django views.",
