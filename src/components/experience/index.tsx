@@ -38,7 +38,7 @@ export function Experience() {
         <SectionTitle text="Experience" />
         {data.map((item, index) => (
           <div key={index} className="mt-4 mx-4 mb-6 md:mb-8">
-            <h3 className="text-strapline-mobile md:text-strapline">
+            <h3 className="text-strapline-mobile md:text-strapline font-medium">
               {item?.title}
             </h3>
             <div
@@ -49,11 +49,12 @@ export function Experience() {
               ])}
             >
               <div className="flex flex-col gap-4">
-                <p>{item?.date}</p>
+                <p className="text-xl">{item?.date}</p>
                 {item.link && (
                   <a
                     href={item.link}
                     target="_blank"
+                    aria-label="External link for website"
                     className="dark:text-darkmode-light text-dark hover:underline block size-fit"
                   >
                     {item.link}
