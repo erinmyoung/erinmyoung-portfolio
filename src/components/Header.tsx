@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useEffect } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import useScreenWidth from "../hooks/useScreenSize";
@@ -13,6 +14,16 @@ import LINKEDIN_SRC from "../assets/linkedin-icon.webp";
 import DARK_LINKEDIN_SRC from "../assets/darkmode-linkedin.webp";
 import GITHUB_SRC from "../assets/github.webp";
 import DARK_GITHUB_SRC from "../assets/darkmode-github.webp";
+
+function HeaderLines({ bottom }: { bottom: string }) {
+  return (
+    <div
+      className={clsx([
+        `absolute ${bottom} -left-100 w-full h-[1px] bg-[var(--color-primary)] dark:bg-[var(--color-darkmode-primary)]`,
+      ])}
+    ></div>
+  );
+}
 
 function ScrollProgress() {
   const { scrollYProgress } = useScroll();
@@ -86,15 +97,19 @@ export default function Header() {
     <div className="w-screen h-screen relative">
       {screenWidth > 460 && <ScrollProgress />}
       <ToggleDarkMode />
-      <div className="block bg-white dark:bg-darkmode-secondary py-4 px-8 absolute left-default lg:left-1/4 top-1/2 transform -translate-y-1/2">
+      <div className="block bg-[var(--color-secondary)] dark:bg-[var(--color-darkmode-secondary)] py-4 px-8 absolute left-default lg:left-1/4 top-1/2 transform -translate-y-1/2">
         <h1 className="font-bungee text-header-small sm:text-header-mobile md:text-header">
           Erin Young
         </h1>
         <span className="block text-strapline-mobile md:text-strapline mt-4">
-          Frontend Engineer
+          Full Stack Engineer
         </span>
         <div className="flex gap-4 mt-4">
-          <a href="https://github.com/erinmyoung" target="_blank">
+          <a
+            href="https://github.com/erinmyoung"
+            target="_blank"
+            aria-label="Github profile"
+          >
             <Icon
               src={darkMode ? DARK_GITHUB_SRC : GITHUB_SRC}
               selectevents="true"
@@ -105,6 +120,7 @@ export default function Header() {
           <a
             href="https://www.linkedin.com/in/erin-young-0a3b1363"
             target="_blank"
+            aria-label="LinkedIn profile"
           >
             <Icon
               src={darkMode ? DARK_LINKEDIN_SRC : LINKEDIN_SRC}
@@ -114,6 +130,9 @@ export default function Header() {
             />
           </a>
         </div>
+        <HeaderLines bottom="bottom-0" />
+        <HeaderLines bottom="-bottom-4" />
+        <HeaderLines bottom="-bottom-8" />
       </div>
     </div>
   );

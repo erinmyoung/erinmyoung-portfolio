@@ -2,7 +2,7 @@ export interface AccordionProps {
   title: string;
   description: string;
   link: string;
-  images?: Image[];
+  images: Image[];
   sliderKey: number;
 }
 

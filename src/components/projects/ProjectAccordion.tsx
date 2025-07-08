@@ -4,18 +4,10 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 
 import { AccordionProps } from "../../types";
-import { useTheme } from "../../context/DarkModeContext";
 
 // Components
 import { ImageSlider } from "./ImageSlider";
-import { Icon } from "../Icon";
 import { Arrow } from "../Arrow";
-
-// Constants
-import {
-  EXTERNAL_LINK_SRC,
-  DARK_EXTERNAL_LINK_SRC,
-} from "../../constants/icons";
 
 export function ProjectAccordion({
   title,
@@ -24,8 +16,6 @@ export function ProjectAccordion({
   images,
   sliderKey,
 }: AccordionProps) {
-  const { darkMode } = useTheme();
-
   return (
     <Accordion classes={{ root: "project-accordion" }}>
       <AccordionSummary
@@ -33,34 +23,34 @@ export function ProjectAccordion({
         aria-controls={`panel${sliderKey}-content`}
         id={`panel${sliderKey}-header`}
       >
-        <div className="grid gap-2 md:flex w-full mr-4 dark:text-white">
-          <h3 className="text-strapline-mobile mr-4">{title}</h3>
+        <div className="flex w-full mr-4 dark:text-white">
+          <h3 className="text-strapline-mobile mr-4 font-medium text-black dark:text-white">
+            {title}
+          </h3>
+        </div>
+      </AccordionSummary>
+      <AccordionDetails>
+        <div className="dark:text-white">
           {link && (
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="-mt-1 size-fit"
+              className="dark:text-darkmode-light text-dark hover:underline block size-fit pb-4"
               aria-label="External link for project"
             >
-              <Icon
-                src={darkMode ? DARK_EXTERNAL_LINK_SRC : EXTERNAL_LINK_SRC}
-                selectevents="true"
-                alt="External link"
-              />
+              {link}
             </a>
           )}
-        </div>
-      </AccordionSummary>
-      <AccordionDetails>
-        <div className="pb-8 dark:text-white">
           <div
             className="pb-4 w-full"
             dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(description),
             }}
           ></div>
-          <ImageSlider sliderKey={sliderKey} images={images || []} />
+          {images.length > 0 && (
+            <ImageSlider sliderKey={sliderKey} images={images || []} />
+          )}
         </div>
       </AccordionDetails>
     </Accordion>

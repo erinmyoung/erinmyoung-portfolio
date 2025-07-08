@@ -89,7 +89,7 @@ export function ImageSlider({
 
   return (
     <>
-      <div className="slider-container relative lg:mx-[60px]">
+      <div className="slider-container relative lg:mx-[60px] pb-4">
         <Slider {...settings} key={sliderKey}>
           {images.length > 0 &&
             images
