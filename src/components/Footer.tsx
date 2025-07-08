@@ -70,11 +70,11 @@ export function Footer() {
         <div className="flex items-center justify-center w-full">
           <DownloadResume />
         </div>
-        <p className="mt-8 mb-4 text-center">
+        <p className="mt-8 mb-4 text-center font-medium">
           Website built with Vite/React, TypeScript, TailwindCSS, Figma, Framer
           Motion, Material UI, React slick, and Vercel.
         </p>
-        <p className="mx-auto size-fit">
+        <p className="mx-auto size-fit font-medium">
           © {new Date().getFullYear()} copyright. All rights reserved.
         </p>
       </section>

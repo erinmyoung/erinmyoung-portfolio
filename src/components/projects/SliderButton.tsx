@@ -15,8 +15,9 @@ export function SliderButton(props: {
         "cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed absolute top-1/2 transform -translate-y-1/2 z-20 hover:shadow-crisp-light dark:hover:shadow-crisp-dark duration-400 ease-in-out",
       ])}
       onClick={onClick}
+      aria-label="See new image slide"
     >
-      <img src={src} width={40} height={40} />
+      <img src={src} alt="Slider button icon" width={40} height={40} />
     </button>
   );
 }

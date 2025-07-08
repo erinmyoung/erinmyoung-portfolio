@@ -40,7 +40,7 @@
   --container-image: 320px;
   --container-icon-small: 28px;
   --container-icon-medium: 40px;
-  --container-icon-large: 100px;
+  --container-icon-large: 86px;
   --font-bungee: 'BungeeShade', sans-serif;
   --color-dark: var(--green);
   --color-primary: #B1CFC7;
@@ -58,28 +58,35 @@
   font-family: 'BungeeShade';
   font-weight: 400;
   font-display: block;
-  src: local('BungeeShade'), url(./fonts/BungeeShade-Regular.woff) format('woff');
+  src: local('BungeeShade'), url(./fonts/BungeeShade-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Tajawal';
   font-weight: 400;
   font-display: block;
-  src: local('Tajawal'), url(./fonts/Tajawal-Regular.woff) format('woff');
+  src: local('Tajawal'), url(./fonts/Tajawal-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  font-weight: 500;
+  font-display: block;
+  src: local('Tajawal'), url(./fonts/Tajawal-Medium.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Tajawal';
   font-weight: 700;
   font-display: block;
-  src: local('Tajawal'), url(./fonts/Tajawal-Bold.woff) format('woff');
+  src: local('Tajawal'), url(./fonts/Tajawal-Bold.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Tajawal';
   font-weight: 900;
   font-display: block;
-  src: local('Tajawal'), url(./fonts/Tajawal-Black.woff) format('woff');
+  src: local('Tajawal'), url(./fonts/Tajawal-Black.woff2) format('woff2');
 }
 
 body {
