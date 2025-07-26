@@ -1,6 +1,6 @@
 {
   "name": "erinmyoung",
-  "description": "Professional portfolio website for Erin Young - Full Stack Developer",
+  "description": "Professional portfolio website for Erin Young - Full Stack Engineer",
   "author": {
     "name": "Erin Young",
     "email": "erinmyoung12@gmail.com",
@@ -41,7 +41,7 @@
     "@tailwindcss/vite": "^4.1.3",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "axios": "^1.10.0",
+    "axios": "^1.11.0",
     "clsx": "^2.1.1",
     "dompurify": "^3.2.5",
     "file-saver": "^2.0.5",

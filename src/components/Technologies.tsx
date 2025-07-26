@@ -3,13 +3,15 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { TechnologiesCardProps } from "../types";
 import { useTheme } from "../context/DarkModeContext";
+import { styled } from "@mui/material/styles";
+import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
+import Button from "@mui/material/Button";
 
 // Components
 import { SectionTitle } from "./SectionTitle";
 import { Icon } from "./Icon";
 
 // Constants
-import { SUBTITLE_SRC, DARK_SUBTITLE_SRC } from "../constants/lines";
 import {
   BOOTSTRAP_SRC,
   CSS_SRC,
@@ -46,28 +48,46 @@ import { containerVariants } from "../constants/animations";
 import GITHUB_SRC from "../assets/github.webp";
 import DARK_GITHUB_SRC from "../assets/darkmode-github.webp";
 
+const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    fontSize: 11,
+  },
+}));
+
 function TechnologiesCard({ src, name, darkModeSrc }: TechnologiesCardProps) {
   const { darkMode } = useTheme();
 
   return (
-    <div>
-      <Icon
-        src={darkMode && darkModeSrc ? darkModeSrc : src}
-        alt={`${name} icon`}
-        size="large"
-      />
-      <div className="relative mt-6 w-icon-large">
-        <img
-          src={darkMode ? DARK_SUBTITLE_SRC : SUBTITLE_SRC}
-          alt="Subtitle lines"
-          loading="lazy"
-          width={63}
-          height={36}
-          className="absolute left-[-6px] bottom-0 pointer-events-none h-[36px]"
-        />
-        <h3 className="pl-2 pb-2">{name}</h3>
-      </div>
-    </div>
+    <>
+      {darkMode ? (
+        <LightTooltip title={name}>
+          <Button>
+            <Icon
+              src={darkModeSrc ? darkModeSrc : src}
+              alt={`${name} icon`}
+              size="large"
+              selectevents="true"
+            />
+          </Button>
+        </LightTooltip>
+      ) : (
+        <Tooltip title={name}>
+          <Button>
+            <Icon
+              src={src}
+              alt={`${name} icon`}
+              size="large"
+              selectevents="true"
+            />
+          </Button>
+        </Tooltip>
+      )}
+    </>
   );
 }
 
