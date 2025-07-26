@@ -37,6 +37,11 @@ const Experience = lazy(() =>
     default: module.Experience,
   }))
 );
+const Interests = lazy(() =>
+  import("./components/interests/index").then((module) => ({
+    default: module.Interests,
+  }))
+);
 const Footer = lazy(() =>
   import("./components/Footer").then((module) => ({
     default: module.Footer,
@@ -78,6 +83,7 @@ export default function App() {
         <Technologies />
         <Projects />
         <Experience />
+        <Interests />
         <Footer />
       </Suspense>
       <Analytics />
