@@ -14,46 +14,46 @@ export const THEME_2011_SRC = `${VERCEL_PATH}projects/theme/2011-yeKxWpDZnmYjNns
 
 export const THEME_2011_BELOW_SRC = `${VERCEL_PATH}projects/theme/2011-below-qA9nU64sxNTlyUzasCPoJ8eQ6Gx0ZY.webp`;
 
-export const DF_ARTICLE_BOTTOM_SRC = `${VERCEL_PATH}projects/digitalfoundry/article-bottom-pGCimtorHkBmtvLpwFf6dj7hjp7LIh.webp`;
+export const DF_ARTICLE_BOTTOM_SRC = `${VERCEL_PATH}projects/digitalfoundry/article-bottom-Dwf30ij79Gp0XV3uSN2CbHEKIOaOAJ.webp`;
 
-export const DF_ARTICLE_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/article-mobile-OhTtpLopLjHjbFHgAheQWWsBxth7rQ.webp`;
+export const DF_ARTICLE_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/article-top-mobile-6HdHRKRok9Lrv9QdjGlzHXW6X6fm7O.webp`;
 
-export const DF_ARTICLE_TOP_SRC = `${VERCEL_PATH}projects/digitalfoundry/article-top-EcX80m1ON9aTFXnQifbKmHKvkJVbsZ.webp`;
+export const DF_ARTICLE_TOP_SRC = `${VERCEL_PATH}projects/digitalfoundry/article-top-185EIIPDU8owpgkQSPFh2J0Wfkngq3.webp`;
 
-export const DF_CARD_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/card-mobile-I1dCLIjtjR7mvv9DyqVq0an2rXmdxF.webp`;
+export const DF_CARD_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/card-mobile-Jt9jr96yYOO8ccOa6DAN9etsv8AwM5.webp`;
 
-export const DF_GAMEPAGE_SRC = `${VERCEL_PATH}projects/digitalfoundry/gamepage-jL7pMkbzH2q3a4KTFU1dLVkSrFJqjr.webp`;
+export const DF_GAMEPAGE_SRC = `${VERCEL_PATH}projects/digitalfoundry/gamepage-7fKFibHg7ha2Pf57UjX93QExlYl0Tk.webp`;
 
-export const DF_HOMEPAGE_SRC = `${VERCEL_PATH}projects/digitalfoundry/homepage-Yll5SwvbhGJcA9lMNOI1FMe5OZ5hFb.webp`;
+export const DF_HOMEPAGE_SRC = `${VERCEL_PATH}projects/digitalfoundry/homepage-yaQ4C8LODKXd88A9612wZMWf227FP7.webp`;
 
-export const DF_LATEST_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/latest-mobile-xwh2QCbUAMvZimcex9iHYotXarj0uk.webp`;
+export const DF_LATEST_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/latest-mobile-3XcGzXBhPjpXoFXYQqCGAGCf3dtZuK.webp`;
 
-export const DF_MENU_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/mobile-menu-dP7z9ttBg0D61F3douushkEncmexIz.webp`;
+export const DF_MENU_MOBILE_SRC = `${VERCEL_PATH}projects/digitalfoundry/mobile-menu-d1np9uNM28eNAkTc4h6hsh2YAG4Vvu.webp`;
 
-export const VG247_ARTICLE_SRC = `${VERCEL_PATH}projects/vg247/article-l1JirXQAIra8hP3AhNImyYFO2a88Qq.webp`;
+export const VG247_ARTICLE_SRC = `${VERCEL_PATH}projects/vg247/article-desktop-NSDM74gsMTxIKwsQhWRpGIZ6xNuLgJ.webp`;
 
-export const VG247_ARTICLE_MOBILE_SRC = `${VERCEL_PATH}projects/vg247/article-mobile-Aw0MUSgFmKRI65vkn4SzehaFYOSAV4.webp`;
+export const VG247_ARTICLE_MOBILE_SRC = `${VERCEL_PATH}projects/vg247/article-mobile-NRfmrAzkSs4OQwRC9ZudYNXIMUGYLx.webp`;
 
-export const VG247_GAMEPAGE_SRC = `${VERCEL_PATH}projects/vg247/gamepage-jRdImFEtHRdMCfcpd5oTaJqdwLPFLN.webp`;
+export const VG247_GAMEPAGE_SRC = `${VERCEL_PATH}projects/vg247/gamepage-desktop-LOB4zO9BnO7iBxnYdlbIKXj5jUT9ME.webp`;
 
-export const VG247_GAMEPAGE_MOBILE_SRC = `${VERCEL_PATH}projects/vg247/gamepage-mobile-wSy2hgisRVNgOVNJ4uvng24p34R0sc.webp`;
+export const VG247_GAMEPAGE_MOBILE_SRC = `${VERCEL_PATH}projects/vg247/gamepage-mobile-5R6Qlyx562bK1YSzpJyEIvuFyjSc73.webp`;
 
-export const VG247_HOMEPAGE_SRC = `${VERCEL_PATH}projects/vg247/homepage-UjJSfARSOeP4sz2bav2TKFfTdukdd0.webp`;
+export const VG247_HOMEPAGE_SRC = `${VERCEL_PATH}projects/vg247/homepage-desktop-gDBpw0MY74UynxwRQr25gk27zjnhpa.webp`;
 
-export const VG247_MENU_MOBILE_SRC = `${VERCEL_PATH}projects/vg247/mobile-menu-wM6KyHhsKqBASIuppWkuYM1MF3LbcL.webp`;
+export const VG247_MENU_MOBILE_SRC = `${VERCEL_PATH}projects/vg247/mobile-menu-mo9CUwzwRBDng7l3EmOEfhTHh5tUVw.webp`;
 
-export const POLL_ADS_SRC = `${VERCEL_PATH}projects/polls/polls-ads-desktop-XwlYlFkYpdamtjMkHhInoa0DMCHXzh.webp`;
+export const POLL_ADS_SRC = `${VERCEL_PATH}projects/polls/poll-ads-desktop.webp`;
 
-export const POLL_ADS_MOBILE_SRC = `${VERCEL_PATH}projects/polls/polls-ads-mobile-WRyoeV0kEDMSmoJt8nHAqsc8BwIZ1X.webp`;
+export const POLL_ADS_MOBILE_SRC = `${VERCEL_PATH}projects/polls/poll-ads-mobile.webp`;
 
-export const POLL_MULTI_SRC = `${VERCEL_PATH}projects/polls/polls-multichoice-desktop-F6E60cOtzMRsSeDqZvWWGJqUdHpPpY.webp`;
+export const POLL_MULTI_SRC = `${VERCEL_PATH}projects/polls/poll-multiplchoice-desktop.webp`;
 
-export const POLL_MULTI_MOBILE_SRC = `${VERCEL_PATH}projects/polls/polls-multichoice-mobile-XgWZh7sqo0DTUuZcYVcPnV6q8PHa1Z.webp`;
+export const POLL_MULTI_MOBILE_SRC = `${VERCEL_PATH}projects/polls/poll-multiplchoice-mobile.webp`;
 
-export const POLL_NEXT_SRC = `${VERCEL_PATH}projects/polls/polls-up-next-desktop-uVFz2PMkOJa6PuNX8a8tb8WJhm1cqI.webp`;
+export const POLL_NEXT_SRC = `${VERCEL_PATH}projects/polls/poll-up-next-desktop.webp`;
 
-export const POLL_NEXT_MOBILE_SRC = `${VERCEL_PATH}projects/polls/polls-up-next-mobile-PKiOwSHS0ueMrul09AcdjA7E9k9GLK.webp`;
+export const POLL_NEXT_MOBILE_SRC = `${VERCEL_PATH}projects/polls/poll-up-next-mobile.webp`;
 
-export const POLL_VOTED_SRC = `${VERCEL_PATH}projects/polls/polls-voted-desktop-MbfO3egpOdxRSLmUcGxnIvwg3CBf9Y.webp`;
+export const POLL_VOTED_SRC = `${VERCEL_PATH}projects/polls/poll-voted-desktop.webp`;
 
-export const POLL_VOTED_MOBILE_SRC = `${VERCEL_PATH}projects/polls/polls-voted-mobile-OB7InDVxm2ZOWrHmSwNxcm3Ju9GIIt.webp`;
+export const POLL_VOTED_MOBILE_SRC = `${VERCEL_PATH}projects/polls/poll-voted-mobile.webp`;

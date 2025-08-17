@@ -22,7 +22,7 @@ describe("About", () => {
 
   it("renders the about with details", () => {
     render(<About />);
-    expect(screen.getByText("New York, NY")).toBeInTheDocument();
+    expect(screen.getByText("United States")).toBeInTheDocument();
     expect(screen.getByText("erinmyoung12@gmail.com")).toBeInTheDocument();
     const icons = screen.getAllByTestId("icon");
     expect(icons.length).toBe(4);
